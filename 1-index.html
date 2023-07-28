@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Cod-Html</title><!-- الاسم اللي بيظهر في المتصفحه فوق  -->
+
+	<link rel="shortcut icon" href="img/wats.jpg" type=""><!-- img او icon بيظهر في المتصفح من فوق -->
+
+	<meta name="description" content=""><!-- وصف عن الموقع content بكتب جوه -->
+	<meta name="keywords" content="web design , web development">
+	<!-- "web design , web development" كلمات عن الموقع مثل content بكتب جوه  -->
+
+	<meta name="author" content="loz"><!-- اسم الشركه او اسم الشخص اللي بناء الموقع content بكتب جوه -->
+	<meta http-equiv="content-Type" content="text/html;charset=UTF-8">
+	<!--ده بيدعم اللغه العربيه -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--ده علشان لم افتح من الموبيل يجي بشكل كويس -->
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/all.min.css">
+	<link rel="stylesheet" href="css/style_index.css">
+</head>
+
+<body>
+	<h1>web development</h1>
+	<!-- h1 مينفعش احط في كل صفحه غير  -->
+	<h2>front-end development</h2>
+	<h3>html</h3>
+	<h3>css</h3>
+	<h3>js</h3>
+	<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem perspiciatis doloremque aliquam dicta, commodi
+		autem, porro, laboriosam sapiente officiis natus neque voluptates aperiam! Quidem voluptates nobis magni
+		perspiciatis et magnam.</p>
+
+	<h2>back-end development</h2>
+	<h3>php</h3>
+	<h3>my </h3>
+	<h3>js</h3>
+	<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem perspiciatis doloremque aliquam dicta, commodi
+		autem, porro, laboriosam sapiente officiis natus neque voluptates aperiam! Quidem voluptates nobis magni
+		perspiciatis et magnam.</p>
+	<!--style-->
+	<div style="color:teal; background-color:#00f">
+	</div>
+
+	<!-- media tags => video , audio -->
+
+	<!-- graphics tags => canvas svg	ارسم بكود -->
+	<canvas></canvas>
+	<svg></svg>
+
+	<!-- semantic tags =>  nav, header, section ,article, aside , footer-->
+	<nav>
+		<!-- navbar  -->
+	</nav>
+
+	<header>
+		<!-- header  -->
+		<div class="layer">
+		</div>
+	</header>
+
+	<section></section>
+	<section>
+		<figure>	<!-- بس تقريبا مش لازم استخدم ده اوي -->
+			<img src="" alt="">
+			<figcaption>text img </figcaption>
+		</figure>
+	</section>
+	<section>
+		<article>
+			<!-- لو هكتب مقاله  -->
+			<h2></h2>
+			<p></p>
+		</article>
+	</section>
+
+	<aside></aside>
+	<!--sidebar لو عايز اعمل جز جانبي في الموقع -->
+
+	<footer></footer>
+
+
+<!-- -------------------------------------------------------------------------------- -->
+	<!-- ده قائمه غير مراتبه  -->
+	<ul>
+		<li>html</li>
+		<li>css</li>
+		<li>js</li>
+	</ul>
+
+	<!-- ده قائمه مراتبه   -->
+	<ol>
+		<li>html</li>
+		<li>css</li>
+		<li>js</li>
+	</ol>
+
+	<!-- لو عايز اعمل قائمه جوه قائمه   -->
+	<ul>
+		<li>html</li>
+		<li>css
+			<ul>
+				<li>margin</li>
+				<li>padding</li>
+				<li>flex</li>
+			</ul>
+		</li>
+		<li>js</li>
+	</ul>
+	<!-- -------------------------------------------------------------------------------- -->
+	
+	<!-- -------------------------------------------------------------------------------- -->
+	<!-- علشان اعمل جدول  -->
+	<table>
+		<thead>
+			<tr>
+				<th>front-end</th>
+				<th>back-end</th>
+				<th>app-modail</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>html</td>
+				<td>php </td>
+				<td>androd</td>
+			</tr>
+			<tr>
+				<td>css</td>
+				<td>my s </td>
+				<td>androd</td>
+			</tr>
+			<tr>
+				<td>js</td>
+				<td>xp </td>
+				<td>appel</td>
+			</tr>
+		</tbody>
+	</table>
+	<!-- -------------------------------------------------------------------------------- -->
+	<!-- -------------------------------------------------------------------------------- -->
+	<!--علي الصوره hover بيظهر لم بعمل title="mohamed" وصف الصوره و ميزدش عن 3 كلمات alt بكتب جوه -->
+	<img src="img/cat.jpg" width="100" height="280" alt="Dr mohamed tark" title="mohamed">
+	<img src="http://www.google.com/images/srpr/logollw.png" alt="move"><!-- ده صوره من لينك  -->
+
+	<!------------------------------------------------------------------------------------------------------------------------------------------>
+	<a href="http://www.google.com/">Google</a>
+	<a href="http://www.google.com/" target="_blank">Google</a> <!-- جديده tap كده بفتح اللينك في  _blank -->
+	<a href="http://www.google.com/"><img src="Google.png" width="200"></a><!-- لم اضغط ع الصوره افتح اللينك -->
+	<a href="register.html">Register Page</a><!-- Register لم اضغط ع اللينك هيدخل علي صفحه  -->
+
+	<!------------------------------------------------------------------------------------------------------------------------------------------>
+	<!--form-->
+	<!--
+			color bieker 
+			bit bieker 
+			js التاريخ و الالون من ال
+		-->
+	<form>
+		<label for="fname">firstName :</label>
+		<!-- id="fname" اللي واخد input يجيب ال firstName علشان لم اضغط ع كلمه for -->
+		<input id="fname" class="form-control" placeholder="firstName" required="required" type="text" name="fname">
+		<!-- text ده نوع مثلا typeوال name جاي في Ahmed يعرف ان ال Ahmed مثلا لو داخل bak endعلشان يبان عندي في ال nameال -->
+		<!-- 
+			input علشان مش هيبعت حاجه غير لم يدخل في input ده لازم يدخل في required ال-->
+		<!-- شفافه input في ال firstName ده بيظهر كلمه placeholder ال-->
+		<!--وبيعمل لون لم تيجي تضغط عليا w-100 ده بيعمل form-control-->
+
+		<label>lastName :</label>
+		<input required type="text" name="lname"><!-- كده بس required ممكن اكتب -->
+
+		<label>Age :</label>
+		<input type="number" name="userAge">
+
+		<label>E-mail :</label>
+		<input type="email" name="userMail">
+
+		<label>Password :</label>
+		<input type="password" name="userpassword">
+
+		<label>upload your cv :</label>
+		<input type="file" name="userfile">
+
+		<!-- 3/7 -->
+		<!-- js الاحسن نعمل ب ال  -->
+		<label>color :</label>
+		<input type="color" name="userColor">
+
+		<!-- datepicker و في حاجات جهزه مثل js الاحسن نعمل ب ال  -->
+		<label>date :</label>
+		<input type="date" name="userDate">
+
+
+		<!--radio-->
+		<!--في الباك name ده اللي بيبعت مع ال valueيختار عنصر واحد و ال user ده بخلي ال radio-->
+		<br><br>
+		<label>Male :</label>
+		<input type="radio" name="gender" value="Male">
+
+		<label>Femal :</label>
+		<input type="radio" name="gender" value="Femal">
+
+		<!--checkbox-->
+		<!--يختار اكتر من عنصر userده بخلي ال  checkbox-->
+		<label>PHP</label>
+		<input type="checkbox" name="skills" value="PHP">
+		<label>JAVA</label>
+		<input type="checkbox" name="skills" value="JAVA">
+		<label>Python</label>
+		<input type="checkbox" name="skills" value="Python">
+
+		<!--textarea-->
+		<textarea name="userCommentMasseg" cols="50" rows="10"></textarea> <!-- بعرض rows ده بطول و cols -->
+
+		<!--select-->
+		<select name="country">
+			<option value="Egypt">Egypt</option>
+			<option value="India">India</option>
+			<option value="Malysia">Malysia</option>
+			<option value="Thai">Thai</option>
+		</select>
+
+		<!--select طريقه تانيه في ال-->
+		<select name="time">
+			<optgroup label="Far Time1">
+				<!--ده زي عنوان رائيسي optgroup -->
+				<option value="1">Now50</option>
+				<option value="2">Now70</option>
+				<option value="3">Now80</option>
+			</optgroup>
+			<optgroup label="Far Time200">
+				<option value="1">Now50</option>
+				<option value="2">Now70</option>
+				<option value="3">Now80</option>
+			</optgroup>
+		</select>
+
+		<br><br>
+		<button type="submit">Send</button><!--  بيبعت البيانات submit -->
+		
+		<button type="reset" value="Reset">	<!-- inputاللي في ال textده بيمسح ال reset -->
+            Reset
+        </button>
+	</form>
+	<hr />
+
+	<!------------------------------------------------------------------------------------------------------------------------------------------>
+	<!--iFrame-->
+	<!--ده ممكن احط موقع عندي جوه الموقع بتاعي زي مثلا ممكن احط الخريطه عندي في الموقع عادي iFrame-->
+	<iframe width="100%" height="400" name="W3_Org" src="http://www.w3.org"></iframe>
+	<!-- cssفاتح جوه الموقع بتاعي  وبحجم كبير العرض 700 والطول 400 وممكن اعمل حجم اكتر من كده والتشكيل في الw3 ده موقع ال--><br>
+	<iframe name="W3_Org" src="http://www.w3.org" scrolling="no"></iframe>
+	<!--يعني مفيش الشريط اللي علي الجانب ده اللي بتنزل بي وطلطلع بيscrollingيعني مفيش scrolling="no"ال--><br>
+	<iframe name="W3_Org" src="http://www.w3.org" scrolling="yes"></iframe>
+	<!--يعني اقدر احرك الشريط تحت وفوق عادي scrollingيعني في scrolling="yes"ال--><br>
+
+
+
+	<br><br>
+	<!--youtube انا كده بضافه من النت فيديو من ال-->
+	<iframe width="760" height="515" src="https://www.youtube.com/embed/XcikV4gcPzo"></iframe>
+
+	<br><br><!-- soundcloudانا كده بضافه من النت  مقطع صوت ال-->
+	<iframe width="400" height="300" scrolling="no" frameborder="no" allow="autoplay"
+		src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/519328014&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+	<div
+		style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+		<a href="https://soundcloud.com/elwaily" title="عِبَادُ اللَّه 🍃" target="_blank"
+			style="color: #cccccc; text-decoration: none;">عِبَادُ اللَّه 🍃</a> · <a
+			href="https://soundcloud.com/elwaily/bfe2tcftfjtv" title="ايه الكرسي والمعوذات (الناس - الفلق - الصمد)."
+			target="_blank" style="color: #cccccc; text-decoration: none;">ايه الكرسي والمعوذات (الناس - الفلق -
+			الصمد).</a>
+	</div>
+
+	<div class="map">
+		<!-- ده عن الخرايطه -->
+		<iframe
+			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.305935303!2d-73.69949651751314!3d40.69714941932609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2z2YbZitmI2YrZiNix2YPYjCDYp9mE2YjZhNin2YrYp9iqINin2YTZhdiq2K3Yr9ip!5e0!3m2!1sar!2seg!4v1602718610844!5m2!1sar!2seg"></iframe>
+	</div>
+
+	<!-- افضل js علشان اشغل اتوماتك من ال audioو ال video ال -->
+	<!-- video autoplay اسمها js في masood  ده ساعات مش بيشتغل وعلشان اضمن ان يشتغل اتوماتك في autoplay-->
+	<audio controls muted loop autoplay>
+		<!--ده اللي بيظهر ليا مقطع الصوت controls ال -->
+		<!-- بيشتغل احسن jsكل م تعمل فرش للصفحه يشغل المقطع ممكن ميشتغلش في ال autoplayال audioبيعيد الloopبيكتم الصوت ال muted ال-->
+		<source src="audio/الشيخ مشاري راشد العفاسي حفص عن عاصم - القرآن الكريم Mp3 - سورة MP3(00).mp3">
+	</audio>
+
+	<video width="500" height="" controls muted loop autoplay>
+		<!--ده اللي بيظهر ليا الفيديو controls ده كده بضافه فيديو عندي في الموقع والvideoال-->
+		<!--كل م تعمل فرش للصفحه يشغل  الفيديو اتوماتك autoplay ده بيخلي الفيديو اول م يخلاص يعيد تاني والloopده بيكتم الصوت في الموقع والmutedوال-->
+		<source src="video/Sami Yusuf – Ya Rasul Allah (Part II) _ صلوا عليه شفيع الأمة(1080P_HD)_1.mp4">
+		<!--ده المكان اللي بنحط في اسم مقطع الصوت اللي يبان في الموقع sourceال-->
+	</video>
+
+	<!------------------------------------------------------------------------------------------------------------------------------------------>
+	<!--العلامات-->
+	<br>
+	&nbsp Fatma &nbsp&nbsp&nbsp&nbsp&nbsp Mohamwd
+	<!--  Mohamwd و  Fatma بتعمل مسافه كده بيعمل مسافه م بين ال &nbspال-->
+
+	<br>
+	&lt;
+	<!--  < ده علامة الاصغر من&lt;ال-->
+	<br>
+	&gt;
+	<!--  > ده علامه الاكبر من &gt;ال-->
+	<br>
+	&amp;
+	<!--  & ده علامه الاند&amp;ال-->
+	<br>
+	&cent;
+	<!--  ¢ ده علامه السنت &cent;ال-->
+	<br>
+	&pound;
+	<!-- £ ده علامه البوند &pound;ال-->
+	<br>
+	&yen;
+	<!--   ¥ ده علامه الين الياباني &yen;ال-->
+	<br>
+	&euro;
+	<!--  € ده علامه اليورو&eruro;ال-->
+	<br>
+	&copy;
+	<!--  © ده علامه الكبي&copy;ال-->
+	<br>
+	&reg;
+	<!--  ® ده علامه التريد مارك &reg;ال-->
+	<br>
+	<hr />
+
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/js_index.js"></script>
+</body>
+
+</html>

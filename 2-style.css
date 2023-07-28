@@ -1,0 +1,1101 @@
+a[href]{// اعمل الخصائص ده href اللي فيها a انا كده بقول اعمل الخصائص اللي ال
+	
+}
+
+/*
+rem // اللي هو 16 htmlبتاع ال font-sizeده بيخد قيمه ال 
+margin:2rem 	// كده هيبقي ب 32
+1rem = 16px 
+
+//------
+em // بتاع الاب font-sizeده بيخد قيمه ال 
+test{
+	margin:50px		// ده الاب
+}
+p{	// ده الابن 
+	margin:1em	// px ده هيبقي 50 ولو كتبت 2 هيبقي 100 
+}
+
+استخدم امته الحاجات ده 
+rem => margin , padding , font-size, border 
+100vh => height
+rem => margin , padding , font-size , border 
+% => width , position 
+
+
+*/
+
+/*
+img
+    filter: brightness(10%);
+	
+*/
+
+/*
+> cssمش هيطبق عليا ال p div و جوه div ع طول امل لو في  testاللي جوه ال  p العلامه ده يعني 
+
+	.test > p {
+		color: #ff0;
+	}
+*/
+
+/*
+// لو عايز اعمل حدود في الكلام بعرض و لو عايز اعمل بطول 
+
+.box_post h3 {
+  font-size: 2rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.box_post p {
+  font-size: 1rem;
+
+  --max-lines: 5;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: var(--max-lines);
+}
+
+*/
+
+/*
+important //	importantانا كده بقول اعمل الخصائص ده حتي لو حد واخد خصائص تاني لا نفذ اللي واخد ال 
+
+margin: 0px important;
+*/
+
+/*
+ قليل جدا لم بستخدم 
+inherit 	// انا كده بقول اورث من ابوك نفس الرقم 
+.test{
+	margin:10px	// ده يبقي ابوه 
+}
+test p{
+	margin: inherit; // انا كده بقول اورث من ابوك نفس الرقم اللي هو رقم 10
+*/
+
+/*
+color
+0123456789abcdef
+
+color: 444444;	// اول رقمين احمر تاني رقمين اخضر ثالث رقمين ازراق 
+color: 4444443d;	// الرقمين الزياده دول بيعمل شفافيه للون dd
+
+
+background-color: rgba(255,0,0);
+*/
+
+
+/*
+prefixer
+ده علشان يدعم جميع المتصفحات prefixerاعمل الcssلازم بعد م اخلاص صفحه ال
+https://autoprefixer.github.io/  اسم prefixer اسم الموقع اللي بيعمل ال
+autoprefixer css onlino وبعد كده اضغط علي 
+cssواحط في الcopy اخد اللي اتعمل prefixerواحطها في الموقع وهو هيحولها ل cut اخدهcssاخد الخصائص اللي جوه ال
+*/
+
+
+/*
+css موقع لضغط ملف ال 
+https://cssminifier.com/ 
+*/
+
+
+
+/*
+box-sizing
+*{
+	box-sizing: border-box;	// paddingوال border ده بيحل مشكله ال 
+	margin: 0px;
+	padding: 0px;
+}
+*/
+
+/*
+img
+
+img {
+	object-fit:cover;	//اللي انت محدد widthده بيخلي الصور او الفيديو بعرض ال 
+	object-position: center center;
+	filter: blur(10px);	// ده بيعمل ضباب في الصوره او الفيديو 
+	filter:opacity(.1) ;	// ده بيعمل شفافيه للصوره او الفيديو 
+	
+	filter:grayscale(150) ; // بيتحكم في لون الصوره او الفيديو 
+    filter:hue-rotate(150deg) ;   // بيتحكم في لون الصوره او الفيديو 
+    filter:invert(200) ;   // بيتحكم في لون الصوره او الفيديو 
+	filter:contrast(10) ;   // بيتحكم في لون الصوره او الفيديو 
+	filter:brightness(300);// بيتحكم في لون الصوره او الفيديو 
+
+
+	filter:drop-shadow(50px 50px 40px rgb(231, 65, 65)) ; // في الصوره او الفيديو shadowده بيعمل 
+}
+
+
+*/
+
+/*
+> 
+
+span > p{		//  علي طول span اللي جوه ال pانا كده بقول هات ال 
+	color:red;
+}
+child لو عايز امسك اول
+.navbar-brand ul li:nth-child(1) {	// ده بيجيب اول عنصر 
+    animation: move1 infinite 0.5s linear;
+}
+
+.navbar-brand ul li:first-child {	// ده بيجيب اول عنصر 
+    height: 12px;
+}
+
+.navbar-brand ul li:last-child {	// ده بيجيب اخر عنصر
+    height: 12px;
+}
+
+*/
+
+
+/*
+form
+
+// Resize Elements	 علشان لو حبب يمنع المستخدم ان يكبر او يصغر textareaده علشان ال 
+
+textarea{
+
+	resize:none;		// ده مش هيكبر ولا بطول ولا بعرض 
+	resize:both;		// ده بيكبر بطول و بعرض ب الماوس 
+	resize:vertical;	// ده بيكبر بطول ب الماوس 
+	resize:horizontal;	// ده بيكبر بعرض ب الماوس 
+}
+
+-------------------
+لم اجي اضغط عليا بعمل كالاتي input لو عايز اغير لون ال 
+
+// html
+<div class="form-kerri">
+	<input type="name" class="form-control">
+</div>
+
+.form-kerri{
+	border:  none;
+	color: #495057;
+    background-color: transparent;
+    outline: none;
+}
+
+// css
+.form-kerri .form-control:focus{
+	border-color: teal;
+	box-shadow: none;
+}
+
+
+/*
+<input  type="text" class="form-control " placeholder="First name">
+
+
+.form-control::placeholder{
+    color: #fff;
+}
+
+*/
+
+*/
+
+
+
+/*
+// hover	ده لم بجي ع العنصر ب الماوس بيعمل خصائص معاينه 
+
+.div{
+	background-color: gray;
+	width:100px;
+	height:100px;
+}
+
+div:hover{		// اعمل الخصائص divانا كده بقول لم اجي ب الماوس ع ال 
+	background-color: #00f;	غير اللون ل احمر 
+	width: 800px;			وكبر العرض ل 800
+}
+
+*/
+
+/*
+// active
+a:active بيغر اللون من الازرق والاحمر للون اخضرgoogleده بقي لم بدوس ع كلمه activeال 
+{
+	color:#080 ده اللون اخضر اول مادوس عليا
+}
+*/
+/*
+// العربي htmlاللي تبع صفحه ال css لو موقع ب العربي بعمل في 
+html{
+	direction:rtl;	// ده كده بعربي
+}
+
+// الانجليزي htmlاللي تبع صفحه ال css لو موقع ب الانجليزي بعمل في 
+html {
+	direction:ltr;	// ده كده انجليزي
+}
+*/
+
+
+
+/*
+// lists	li ده علشان يشيل علامه اللي في ال 
+
+ul {
+	list-style-type:none;		//وممكن اجيب علامات من النت  li ده كده بشيل العلامه اللي جانب ال 
+}
+
+
+
+*/
+
+
+
+
+
+/*
+// cursor	علامات الماوس 
+// CodePen & cursor ده موقع بجيب من علامات الماوس 
+
+span {
+	cursor:pointer;   علامه الايد 
+}
+*/
+
+
+/*
+// Display block & inline-block & none	ده بيخلي العناصر جانب بعض او تحت او يخفئ
+
+img , a , span {
+	display: block;			// انا كده بخلي العناصر كده تحت بعض
+}
+
+div , h1 , h6 , p {
+	display: inline-block;	// انا كده بخلي العناصر جانب بعض
+}
+
+.test {
+	display: none;			// ده بيخفي العنصر خالص من الويب وبيشل مكان خالص
+}
+
+.test:hover {	
+	display: block;			// ده بيظهر العنصر تاني 
+}
+*/
+
+/*
+// Opacity		ده بيعمل شفافيه للعنصر كل ومعاك من 0لحد 1 واكتر حاجه بنستخدمها
+
+div {
+	width: 200px;
+	height: 200px;
+	background-color: #ddd;
+	
+	Opacity:0;
+	opacity:0.5;
+	opacity:1;
+}
+
+*/
+
+/*
+// Visibility	ده بيخفي العنصر وبيظهر بس بسيب مكان محفوظ وقليل ان استخدمها 
+
+div
+{
+	width: 200px;
+	height: 200px;
+	background-color: #ddd;
+	
+	visibility: hidden;		ده بيخفي العنصر بس بيحفظ مكان في الويب 
+	visibility: visible;	ده بيظهر العنصر ده القيمه الافتراضيه
+}
+
+*/
+
+
+/*
+// overflow	ده بيخفي العنصر او بيعمل اسكرور 
+
+.test{	
+	overflow:visible;		// ده القيمه الافتراضيه ده بيظهر 
+	overflow:hidden;		// ده بيخفي 
+	overflow:scroll;		// scroll ده بيعمل 
+	overflow:auto;			// اتوماتك scroll ده بيعمل اتوماتك لو في ذيده ب العرض او بطول بيعمل 
+	
+	overflow-x:hidden; 		// بعرض scrollده بيخغي ال
+	overflow-y:hidden;		// بطول scrollده بيخغي ال
+	overflow-y:scroll;		// بطول scrollكده بعمل 
+	overflow-x:scroll;		// بعرض scrollكده بعمل 
+	overflow-y:auto;		// بطول لو متاح auto كده بعمل 
+	overflow-x:auto;		// بعرض لو متاح auto كده بعمل 
+}
+*/
+
+/*
+// Text
+
+div {
+	letter-spacing:5px;		// ده بيعمل مسافات بين الحروف بعرض
+	word-spacing:50px;		// ده بيعمل مسافه بين الكلمه بعرض
+	line-height:50px;		// ده بيعمل مسافه بين السطور من فوق  ومن تحت بطول
+	
+	text-decoration:none;			// ده بيشل اي خط 
+	text-decoration:underline;		// ده بيعمل خط تحت الكلام 
+	text-decoration:overline;		// ده بيعمل خط فوق الكلام 
+	text-decoration:line-through;	// ده بيعمل خط وسط الكلمه
+
+	// تحويل الكلام من كبتل للسمول او العكس
+	text-transform:capitalize;		// ده بيخلي اول حرف في كل كلمه كبتل
+	text-transform:uppercase;		// ده بيخلي كل الكلام كبتل
+	text-transform:lowercase;		// ده بيخلي الكلام اسمول
+	
+	text-align:left;	// ده بيجيب الكلام ف الشمال 
+	text-align:right;	// ده بيجيب الكلام في المين 
+	text-align:center;	// ده بيجيب الكلام في الوسط 
+}
+*/
+
+/*
+// font	الخط
+
+div {
+	font-size:32px; 		// %او ب ال pxده بيكبر الخط ب ال 
+	font-weight:400;		// القيمه الافتاضيه 400 وهي من 100 ل 900 
+	font-style: italic; 	// ده بيعمل الكلام مايل
+	font-style: normal; 		// ده القيمه الافترضبه 
+	font-family:"segoe ui light";	// ده بيعمل شكل الخط
+		// واختار نوع الخط اللي انا عايز وادوس عليا htpps//://www.fonts.google.com ادخل ع الموقع 
+		// headفي ال html واخد اللينك كوبي واحط في صفحه ال Embed وبعد كده دوس ع + Select this style وبعد كده ادوس ع
+		// font-family واحط في copy وبعد كده اخد الخط 
+}
+
+https://fonts.google.com/ لو عايز اي خط بدخل ع موقع 
+Select this style واضغط ع الخط اللي انا عايز ثم اضغط ع 
+head في ال index.html واحط في صفحه ال link ل copy ثم اعمل 
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,200&display=swap" rel="stylesheet"> 
+
+font-familyواحط ال cssبعد كده ادخل ع ملف ال 
+font-family: 'Source Code Pro', monospace; 
+
+الخط حلو 
+font-family: 'segoe ui light' ;
+
+
+*/
+
+/* ------------------------------------------- */
+/*
+// text-shadows ده بيعمل ظل للكلام للجمله 
+
+h1{	
+	text-shadow:none كده انا بلغي جميع الخصائص
+	text-shadow:1px 2px 3px #eb3865,
+}
+
+h1:hover{
+	text-shadow:1px 2px 3px #eb3865,
+				2px 3px 7px #00f;
+}
+*/
+
+/*
+Box-Shadow		Boxبيعمل ظل وبيعمل ضباب ع ال
+// generator اللي انا عايز اسم Shadowفي موقع بيجيب ال
+
+div
+{
+
+	border:1px solid #ccc;
+	box-shadow:none;	 // Shadowده بلاغي ال 
+	
+	// اللي بيعمل ظل 10 و 15 وال 20 بيعمل ضباب 
+	box-shadow:10px 15px 20px #ddd;		// الموجب بيعمل الظل في اليمين ومن تحت
+	box-shadow:-10px -10px 50px #ddd; 	// السالب ده بيعمل من الشمال ومن تحت
+	
+	box-shadow:-10px -10px 10px #ddd inset;	// insetده بيعمل ظل داخلي ال
+	
+	box-shadow:-10px -10px 10px #f00,  		// كده الظل ده هيبان في الشمال من فوق بلون الاحمر لازم افصل بعلامه الكومه 
+				10px 10px 10px #00f,		// كده الظل ده هيبان في اليمين من تحت بلون الازراق 
+				10px 10px 10px #080, 		// كده الظل ده هيبان في اليمين من تحت  بلون الاخضر فوق اللون الازراق 
+}
+
+box-shadow:Horizontal Shadow & Vertical Shadow & Blur & Spread & color
+box-shadow:10px 10px 50px 10px #ddd inset;
+
+ده بيعمل ضباب Blur ال
+بيعمل انتشار للضباب  بس انا مش بستدم كتير Spread ال
+بيعمل ظل من الداخل insetال
+
+*/
+
+
+/*
+// Border
+
+.test {
+	border: none;			// border ده القيمه الافتراضيه بشيل اي 
+	border-color: #00f;
+	border-color: none;
+	
+	border:5px solid#f00
+
+	border-top:5px solid#f00
+	border-bottom:5px solid#f00
+	border-left:5px solid#f00
+	border-right:5px solid#f00
+	
+	border:5px double#f00	// ده خطين دبل douderال
+	border:5px groove#f00	// ده خط ثقيل تحس ان داخل لجوه grooveال
+	border:5px ridge#f00	// ده خط ثقيل تحاس ان طالع لبره ridgeال
+	border:5px inset#f00	// ده داخلي border 
+	border:5px outset#f00 	// ده خارجيborder
+	border:5px hidden#f00	// مخفيborderده
+	border:5px dotted#f00	// منقط borderده
+	border:5px dashed#f00	// ده منقط خفيفي
+}
+*/
+
+/*
+// border-radius 
+
+div, img {
+	width:200px;
+	height:200px;
+	
+	border-radius:50%;					// ده كده شكل دائري
+	border-radius:100px 50px 80px 120p; // Top Right Bottom Left
+	border-radius:0px 0px 0px 50px;     // وممكن اعمل من جانب واحد فقط عادي 
+}
+*/
+
+ 
+/*
+// Margin	بيعمل مسافات خارج هامش خارجي 
+// padding	بيعمل مسافات داخلي هاومش داخليه
+
+overflow:auto;  ولاقيت الاب اللي نزل معاه يبقي ادي ل الاب margin-top و اديت ل الابن div جوه div لو في مره عملت 
+
+.test{
+	margin: 10px 20px 30px 40px; 	//top  right  bottom left
+	padding: 10px 20px 30px 40px;	//top  right  bottom lef
+	margin: auto;	// ده بيتوسطن بعرض 
+}
+
+margin: 10px 20px 30px 40px; 	//top  right  bottom left
+// زي عقرب الساعه 
+margin-top:10px;	// 12 الساعه top 
+margin-right:10px;	// 3 الساعه right 
+margin-bottom:10px;	// 6 الساعه bottom 
+margin-left:10px;	// 9 الساعه left 
+
+
+
+
+
+
+*/
+
+
+
+/*
+// Background	خلفيه العنصر
+
+div {
+	background-color: #11506f;	// انا بعمل الخلفيه الالوان
+	background: linear-gradient(147deg,#f6b323 0%, #f23b26 74%);
+	background:linear-gradient(red,blue)		// ده بيعمل تدريج ب الالون زي مثلا الالون الطيف
+	background:linear-gradient(red,blue,green)	// ممكن اعمل اكتر من لون 
+	background:linear-gradient(45deg,red,blue)
+	background:linear-gradient(90deg, #b06afe,#40a6ff);
+	
+	background:radial-gradient(45deg,red,blue)	// bottonممكن اعمل من زوايه واحده  وممكن اكتب الرقم اللي انا عايز وممكن استخدم في ال 
+	
+	// background ده بيعمل شفافيه للون ال 
+	background-color: rgb(r,	g,		b)	(الاحمر	الاخضر	الازراق)
+	background-color: rgb(0.255,0.255,0.255)	// كل قيمه بتاخد من 0لحد 255
+	background-color: rgba(255,0,0,0.5)		// اللي انا ذودت ده ممكن اعمل كده شفافيه للون aحرف ال 
+
+	
+	background-image: url('1.jpg');					// انا بعمل الصوره خلفيه
+	background-image: url('../images/two.png');		// imagesال folder بدخل جوه css ال folder انا كده بخرج بره 
+	background-image: url('../images/two.png') ,url('../images/thre.png');	// background-color اعمل معاه background-imageوممكن كمان اعمل فوق background-image انا ممكن اعمل 2
+	
+	background-size:cover;		// لو الصوره عندي كبيره و ده احسن حاجه divبتاع ال heightو widthده بيظبط حجم الصوره ع قد ال
+	background-size:100% 100%;	// ده العرض والطول لو الصوره عندي كبيره بس مش قد كده width heightكده بتظهر الصوره بحجمها الطبيعي وال
+	
+	background-repeat:no-repeat;	// كبير divده مش بيكرر الصوره حتي لو حجم الصوره صغيره وعرض وطول ال
+	background-repeat:repeat-x;		// ده بيكرر بعرض repeat-xال 
+	background-repeat:repeat-y;		// بيكرر بطول repeat-yال
+	
+	background-position:				// كبير divالصوره بتتحرك معايا لو حجم الصوره صغيره وحجم ال
+	background-position:top rigt;		// الصوره كده من فوق علي اليمين
+	background-position:center center;	// الصوره كده في الوسط في الوسط
+	background-position:left bottom;	// الصوره كده في الشمال من تحت
+	background-position:70%10%;			// ال70% الاول ده بيحرك بعرض بنسبه 70% من الشمال لليمين وال10% ده بيحرك بطول بنسبه 10% من فوق ل تحت
+	
+	background-attachment:fixed;	// بيخلي الصوره ثابته بس بيزل ويطلع بكلام 
+	background-attachment:scroll;	// ده مش بينزل الصوره معايا بفضل الصوره في مكنها فوق ده الوضع الطبيعي scrollال 
+}
+
+<!--الالون-->
+<!--الازراقBالاخضر الGالاحمر الRال-->
+<!--R  G  B-->
+<!--00 00 00--><!--0123456789abcdef كل م تذيد ب الرقم يزيد درجه اللون ده الارقام -->
+*/
+
+
+/*
+// Float
+
+// html كود ال 
+<div class="meals">
+	<div class="meal">
+		<div class=" inner">
+			<img src="images/two.png" alt="Mohamed Salem">
+			<h2>Mohamed Salem</h2>
+			<div class="brdr"></div>
+			<p>I am an allround wed developer.I am an allround wed developer.</p>
+		</div>
+	</div>
+	<div class="meal">
+		<div class=" inner">
+			<img src="images/two.png" alt="Mohamed Salem">
+			<h2>Mohamed Salem</h2>
+			<div class="brdr"></div>
+			<p>I am an allround wed developer.I am an allround wed developer.</p>
+		</div>
+	</div>
+	<div class="meal">
+		<div class=" inner">
+			<img src="images/two.png" alt="Mohamed Salem">
+			<h2>Mohamed Salem</h2>
+			<div class="brdr"></div>
+			<p>I am an allround wed developer.I am an allround wed developer.</p>
+		</div>
+	</div>
+	<div class="meal">
+		<div class=" inner">
+			<img src="images/two.png" alt="Mohamed Salem">
+			<h2>Mohamed Salem</h2>
+			<div class="brdr"></div>
+			<p>I am an allround wed developer.I am an allround wed developer.</p>
+		</div>
+	</div>
+	
+	<div class="clr"></div>	<!--يجي تحت عادي h2 ده بيحل مشكله ان هخيلي ال -->
+	<h2>clear_h2</h2>
+</div>
+
+//css
+.meals {
+	width: 80%;
+	margin: auto;
+	background-color: #09c;
+}
+.inner{
+	background-color:#e0e
+}
+
+.meal {
+	background-color: tomato;
+	text-align :center;
+		
+	float: left;
+	width: 15%;	
+}
+.meal img {
+	width: 100%;
+	border-radius: 50%; 
+}
+.clr {
+	clear:both;
+}
+.brdr{
+	width: 25%;
+	height :2px;
+	background-color: gray;
+	margin: auto;
+}
+*/
+
+/*
+// position 	fixed او اعمل حاجه layer فوق layer بستخدم فقط ان اعمل positionال
+
+position-static 	// position ده بيلاغي اي
+position: static; 	// position ده بيلاغي اي
+
+// absolute		جديده layer وبيعمل bodyده كده بيحسب الابعاد من ال 
+.test {
+	position:absolute;	// من فوق 100 ومن اليمين 200 bodyيعني بيبعد من ال bodyده كده بيحسب الابعاد من ال 
+	top:100px;
+	right:200px;
+}
+
+--------------
+// relative		الابن ابعاد هيبقي ل ابوه absolute والابن واخد relative ده لو الاب واخد 
+.parent{
+	position: relative; 	// bodyعملت ده علشان الابن يبقي ابعد ل الاب مش ل ال 
+	left: 100px;
+	bottom: 100px;
+}
+
+.child{
+	position: absolute;		// ده ابعد ل الاب bodyده كده ابعاد مش ل ال 
+	left: 0;
+	bottom: 0;
+}
+
+// position: relative;		لنفس ابعاد ل نفس relative هيبقي relative طيب لو الابن واخد 
+
+--------------
+// fixed		ده لم تعمل اسكرور بيفضل ثابت في مكان وبقي الصفحه هي اللي بتتحرك 
+جديده layer وبيعمل 		bodyده كده بيحسب الابعاد من ال 
+.child {
+	position: fixed;	bodyده ابعاد من الfixedانا كده بقول خليك ثابت في الشاشه نزلت او طلعت ب الماوس هيفضل ثابت وال
+	top:100px;			bodyده ابعاد ل
+	right:200px;		bodyده ابعاد ل
+}
+*/
+
+/*
+// z-index	   فقط position ع حسب انت عايز ايه وبستخدم مع layerده بيرتب ال 
+
+.one{
+	position: absolute;
+	top: 100px;
+	left: 100px;
+
+	z-index: 5;			// ده هيظهر التاني layer ده هيبقي في تاني 
+}
+
+.two{
+	position: absolute;
+	top: 120px;
+	left: 120px;
+	
+	z-index: 10;		// هيظهر في الاول layer ده هيبقي في اول 
+}
+*/
+
+/*
+// after & before
+
+// divانا كده بقول ضافه ليا الجمله ده قبل الكلمه اللي في ال
+div{
+	background-color: gray;
+	width:100px;
+	height:100px;
+}
+
+div::before {		// divانا كده بقول ضافه ليا الجمله ده قبل الكلمه اللي في ال
+	content:"iam content css";
+}
+
+-----
+// من اليمين والشمال في منتصف الكلمه border زي مثلا h1 انا كده بعمل خط قبل وبعد ال
+h1{
+	text-align: center;
+	position: relative;
+}
+
+h1::after{
+	content:"";
+	width: 40%;
+	height: 3px;
+	background-color: #00f;
+	position: absolute;
+	top: 50%;
+	right:0;
+}
+
+h1::before{
+	content:"";
+	width: 40%;
+	height: 3px;
+	background-color: #00f;
+	position: absolute;
+	top: 50%;
+	left:0;
+}
+-----
+// وجوه كلمه وفي زي شطره من تحت border ب ال Box انا بعمل
+h2{
+	text-align: center;
+	border: 3px solid #09c
+	padding: 20px 25px;
+	width: 15%;
+	position: relative;
+}
+ h2::after{
+	content:"";
+	width: 40%;
+	height: 3px;
+	background-color: #fff;
+	position: absolute;
+	top: 79%;
+	left:13px;
+	border-left: 3px solid #09c
+}
+h1::before{
+	content:"";
+	width: 40%;
+	height: 3px;
+	background-color: #00f;
+	position: absolute;
+	top: 50%;
+	left:0;
+	z-index: 2;
+}
+*/
+
+/*
+// Transition	يخد عرض براحه width يخالي ال width ع hover ده بيخلي اي عنصر يشتغل براحه مثلا لو 
+
+.test{
+	background-color: gray;
+	width:100px;
+	height:100px;
+	
+	transition-property: all;				// allوهكذه طب لو عايز حاجه معاينه بكتب مكان ال widthوال background-colorده يعني كل يشتغل براحه مثلا زي ال all
+	transition-Duration: 3s;				// انا كده بقول شغل الخصائص ده في 3ثواني 
+	transition-Delay: 2s					// انا كده بعمل تاخير 2 ثانيه بعد كده يشتغل 
+	transition-Timing-Function: ease;		// ده بيبداءو ينتهي تدريجيا easeال
+							//: linear;		// ده بيبداء وينهايه في الحال لكن بيمشي بمعدل ثابت linearال
+							//: ease-in;	// ده بيده تدريجي ويقف في الحال ease-inال
+							//:ease-out;	// ده بيبداء بسرعه بس في النهايه بيعمل تدريجي ease-outال
+							//:ease-in-out;	// ده بيعمل تديجيا في البداء والنهايه ease-in-outال
+}
+
+.test:hover{
+	width: 800px;
+}
+--------------------
+// الكود المختصر	transition:property | Duration | Delay | Timing Function
+
+div{
+	width:100px;		
+	height:100px;
+	color:#fff;
+	background-color:#f00;
+	opacity: 1;
+	
+	transition: opacity 1s;	 						// فقط في 1ثانيه opacityانا كده بقول اشتغل ع ال 
+	// transition: background-color .5s , opacity 1s;	// واحد ثانيه opacityنص ثانيه و ال background-color انا كده مشغل كل خاصي ب ثواني لوحده 
+	// transition: all 5s 3s ease-in-out;			//وهكذه و ال 5ده التشغيل و ال3 التاخير opacity و width و background-color انا كده بقول اشتغل جميع الخصائص 
+}
+
+div:hover{
+	width:200px;
+	background:#00f;
+	opacity: 0;
+}
+*/
+
+/*
+Transform
+
+// Transform-Rotate		ده بيعمل دوران للعنصر بموجب دوران لليمين بسالب بيعمل دوران للشمال
+ //الموقع ده في اشكال scale3d codepen في موقع اسم 
+
+div {
+	background-color: #09c;
+	width: 150px;
+	height: 150px;
+	transition:	transform 2s;
+}
+
+div:hover {
+	transform: rotate(45deg)	
+	transform: rotateY(360deg)	// بيعمل دوران بطول
+	transform: rotateX(360deg)	// بيعمل دوران بعرض
+}
+
+// --------------------------
+// transform-origin	// ده بيخلي الحركه بتبداء من اليمين او الشمال او من الواسط 
+
+	transform-origin:left; 	من الشمال 
+	transform-origin:center; 	من الوسط 
+	transform-origin:right;	من اليمين 
+
+// ---------------------------
+
+// transform:rotate & transform-origin		هعمل دوران من اي نقطه بظبط
+div
+{
+	background-color: #09c;
+	width: 150px;
+	height: 150px;
+	transition:	transform 2s;	علشان يعمل نعومه في الحركهtransitionال
+
+	transform-origin:right center; 	هيمعل دوران من اليمين في الواسط
+	transform-origin:left center; 	هعمل دوران في الشمال من الوسط
+	transform-origin:bottom right;	هعمل دوران من اليمين من تحت
+}
+
+div:hover{		من فوق هيبان في الويب دوران جاهز للعميلdivمعمول في الrotateلو ال
+	transform:rotate(360deg)	بيعمل دوران من الواسط
+}
+
+// --------------------------
+// Transform-Translate	ده بيحرك العنصر بعرض او بطول وبيقبل موجب وسالب 
+
+div{
+	background-color: #09c;
+	width: 150px;
+	height: 150px;
+	transition:	transform 2s;
+}
+
+div:hover{
+	transform: translate(x,y);				// ده بيحرك بطولyده بيحرك بعرض والxال
+	transform: translate(0px,400px);		// بطول pxده بيتحرك من فوق ل تحت بمسافه 400
+	transform: translate(400px);			// ده كده بيحرك ب العرض 
+
+	transform: translate3d(x,y,z);			ابعاد ثلاثي z طول y عرض xال
+	transform: translate3d (0,0,200px);		ال200 ده تحاس ان الصوره بتكبر وتقرب ليك 
+	transform: translate3d(0,0,-200px);		طيب لو عملت بسالب -200 كده تحاس ان بيصغر الصوره وتحاس ان بتبعد عن عينك
+} 
+
+// -------------------------------
+// Transform-Scale  	 ده بيكبر او بيصغر حجم العنصر 
+
+div{
+	background-color: #09c;
+	width: 150px;
+	height: 150px;
+	transition:	transform 2s;
+}
+
+div:hover{
+	transform: scale(x,y);		ده بيكبر بطول yده بيكبر بعرض وال xال
+	transform: scale(1,1);	 	ال1 ده الطبيعي مش بيعمل حاجه لو كبرت في الرقم بيكبر الحجم لو صغرت عن ال1 بيصغر الحجم
+	transform: scale(0.5,0.5);	كده بيصغر بعرض وبطول نص ال1 
+	transform: scale(5);		كده بكبر بعرض وبطول
+	transform: scalex(2);		كده بيكبر بعرض
+	transform: scaleY(2);		كده بيكبر بطول
+	
+	transform:Scale3d(x,y,z) rotateY() 		3dعلشان يبان معايا شكل ال rotateYده بيعمل ثلاثي الابعاد ولازم اعمل Zبيكبر بطولYده بيكبر بعرض والXال
+
+	transform:Scale3d(2,2,3) rotateY(45deg)	3dده كده بيقرب من العين قوي وبيعمل ال
+	transform:ScaleZ(4) rotateY(60deg) 		Y الrotateده كده بيعمل دوران مجسم بعرض علشان واخدZال 
+	transform:ScaleZ(4) rotateX(60deg)		X الrotateده كده بيعمل دوران  بطول علشان واخدZال 
+}
+
+// -----------------------------
+// Transform-skew		ده بيعمل ميل او انحرف او مشطور وبيقبل قيم سالبيه
+
+div {
+	background-color: #09c;
+	width: 150px;
+	height: 150px;
+	transition:	transform 2s;	علشان يعمل نعومه في الحركهtransitionال
+}
+
+div:hover{
+	transform: skew(x,y);			ده بيعمل ميل بطول yده بيعمل ميل بعرض وال xال
+	transform: Skew(10deg,10deg);	ده بيعمل بعرض وبطول شطره 
+	transform: SkewX(10deg);		ده بيعمل مشطور بعرض
+	transform: SkewY(10deg);		ده بيعمل مشطور بطول
+}
+
+// ------------------------
+// Transform	الكود المختصر
+
+.Skew:hover	{
+	transform: rotate(360deg) scale(1.5,2) Translate(200px,0px) SkewY(45deg);
+
+}
+*/
+
+/*
+// Flex_Box
+
+// html
+<div class="parent">
+	<div class="child">One</div>
+	<div class="child">Two</div>
+	<div class="child">Thre</div>
+	<div class="child">Four</div>
+	<div class="child">Five</div>
+</div>
+
+// css
+.parent{
+	background-color: #ddd;
+	
+	height: 100%; 		//يجيب العنصر في الوسط بطول align-items:center; ده علشان 
+	
+	display: flex;		// ده بيجيب العناصر جنب بعض 
+	
+	// او لا child ده بيكسر 
+	flex-wrap: nowrap; 		// child مش بينزل لو في اكتر من childفي ال width ده مهمه تذيد ب ال 
+	flex-wrap: wrap;		// بيكسر الذياده للسطر اللي بعد
+   	
+	// ده بيحدد الاتجاهات بيشلب الموقع خالص من الشمال ل اليمن ل الموقع العربي وكمان ممكن اخليهم تحت بعض 
+	flex-direction: row;			// ده القيمه الافتراضيه من الشمال لليمين 
+	flex-direction: row-reverse;	// من الشمال لليمين وبستخدم لم بعمل موقع عربي Boxده بيعكس ال 
+	flex-direction: column;			// ده بيخلي العناصر تحت بعض 
+	flex-direction: column-reverse;	// ده بيخلي العناصر تحت بعض بالعكس اللي تحت فوق و اللي فوق تحت 
+	
+	// ده بتوزع العناصر بعرض 
+	justify-content:flex-start;	 	// ده القيمه الافتراضيه من الشمال ل اليمين 
+	justify-content:flex-end;		// ده بيجيب العناصر في اليمين 
+	justify-content:center;			// ده بيجيب العناصر في الوسط 
+	justify-content:space-around;	// ده بيقسم المساحه بتساوي بعرض وبتسيب مساحه من الاطراف
+	justify-content:space-between;	// home واحد logo واحد يمين واحد شمال مثلا واحد child ده بيقسم المساحه بتساوي بعرض بس مش بتسيب مساحات ع الاطراف  وده حلوه لو في 2
+	justify-content:space-evenly;	// بتساوي بعرض بظبط childده بيقسم ال
+	
+	// ده بتوزع العناصر بطول 
+	align-items:stretch;		// ده القيمه الافتراضيه
+	align-items:flex-start;		// ده بيجيب العناصر من فوق بطول 
+	align-items:flex-end;		// ده بيجيب العناصر من تحت بطول  
+	align-items:center;			// ده بيجيب العناصر في الوسط بطول 
+	align-content:space-around;		// ده بيقسم المساحه بتساوي بطول وبتسيب مساحه من الاطراف 
+	align-content:space-between;	// ده بيقسم المساحه بتساوي ب الطول بس مش بيسيب مساحه في الاطراف 
+	
+	// ده قليل ان استخدمها ده بيتحكم في الفرغ اللي في النص ده بقي بلازق في بعض 
+	align-content:center;		// ده بيقي في الوسط بس بيشل الفراغ اللي في الوسط 
+	align-content:flex-start;	// ده بيقي من فوق وبيشل الفرغ اللي في الوسط 
+	align-content:flex-end;		// ده بيقي من فوق وبيشل الفرغ اللي في الوسط 
+}	
+
+.child{
+	background-color: #080;
+	width: 25%;
+	height: 100px; 
+	
+	// flex-grow: 1; // ده بينمو ورقم 1 ده كده بيكبر من المساحه الفضله وكل م تذيد ب الرقم بيذيذ ب المساحه و الديفولت ب 0
+	// flex-shrink: 1; // ده بيتقلص ورقم 2 ده بيتقص الحجم المساحه وكل م تذيد ب رقم بيتقلص ب المساحه والديفولت ب 1
+}
+
+css-tricks 
+*/
+
+/*
+// Animation
+
+div{
+	width:100px;
+	height:100px;
+	background-color:#f00;
+	
+	animation-name: moving;		// تحت بكتب هنا @keyframes اللي كتب animationو اسم ال 
+	
+	animation-duration:6s;		// ده الفتره الزمنيه يعني بقول اشتغل لمده 6ثواني 
+
+	animation-iteration-count:1; 			// ده الطبيعي رقم 1 مش بيعمل حاجه
+	animation-iteration-count:4;			// انا كده بكرار العنصر مثلا في الحرك او تغير اللون 4مرات
+	animation-iteration-count:infinite;		// ده بيكرر ع طول مده النهايه infiniteال
+	
+	animation-direction:normal;					// ده هيبداء من 0 ل 100
+	animation-direction:reverse ;				// ده بيداء العكس من 100% ل 0
+	animation-direction:alternate ;				// ده بيداء من 0 ل 100 وبعد كده من 100 ل 0 وده احسن حاجه 
+	animation-direction:alternate-reverse ;		// بيداء من 100 ل 0 وبعد كده يبداء من 0ل 100  
+	
+	animation-delay:0s;		// ده القيمه الافتراضيه بيشتغل ع طول 
+	animation-delay:4s;		// انا كده بقول اشتغل بعد 4ثواني 
+	
+	animation-fill-mode:none;	ده طبيعي مش بيعمل حاجه
+	animation-fill-mode:forwards;	بيقف عند 180وبلون الاصفر keyframesده بيخد اخر خصائص وبيتحرك عادي بس لم يجي يقف هيقف عند اخر خصائص الforwardsال
+	animation-fill-mode:backwards;		هيتداء من ال50واللون هيبقي اخضر واول ميقف هيقف ع اللون الاصلي الاحمر وهرجع تاني فوقkeyframesده بيخد خصائص اول backwardsال
+	animation-fill-mode:both;		الاخيرkeyframesهيقف عند ال animationوبعد كده م يخلاص الkeyframesده بيخد خصائص اول bothال
+	
+	animation-play-state:running;	ده طبيعي مش بيعمل حاجه بيتحرك عادي
+	animation-play-state:paused;	js واكترحاجه بستخدمها ف ال animation ده بيعمل ايقاف ل ال
+	
+	animation-timing-function:ease;		ده بتبداء بطيئ وتمشي سريعه  وتنتهي بطئي ده الطبيعي
+	animation-timing-function:ease-in;	ده بتبداء بطي وتمشي طبيعي وفي الاخر بتسرع
+	animation-timing-function:ease-out;		ده ببتداء سريع بس في الاخر بيبقي بطيئ
+	animation-timing-function:ease-in-out;	بتبداء بطئ وتمشي عادي وفي النهايه تبقي بطئ
+	animation-timing-function:linear;		بيتداء ويمشي وينتهي سرعه واحده
+}
+
+@keyframes moving{	
+	0%{
+		background-color:#000f;		
+	}
+	100%{
+		background-color:#080;
+	}
+}
+
+---------------------------------------------------------
+// header بتاع ال background-imageمثلا انا اغير صور ال 
+
+header {
+	height: 100vh;
+	background-image: url(../images/s.jpg);
+	background-size: cover;
+	background-position: center center;
+	animation-name: slider;	
+	animation-duration:6s;
+	animation-iteration-count:infinite;
+	animation-direction:alternate ;
+}
+
+@keyframes slider{
+	0%{background-image: url(../images/s.jpg); width: 0; height: 0;}
+	10%{background-image: url(../images/s1.jpg); width: 100%; height: 100vh;}
+	30%{background-image: url(../images/s2.jpg); width: 0; height: 0;}
+	50%{background-image: url(../images/s3.jpg); width: 100%; height: 100vh;}
+	70%{background-image: url(../images/s4.jpg); width: 0; height: 0;}
+	100%{background-image: url(../images/s5.jpg); width: 100%; height: 100vh;}
+}
+	
+*/
+
+/* ========================================================================================================== */
+/*
+// @media
+xs -> الشاشات اصغر من 600
+sm -> الشاشات من 768 لحد 600
+md -> الشاشات من 768 لحد 992
+lg -> الشاشات من 992 لحد 1200
+xl -> الشاشات اللي اكبر من 1200
+
+max -> ده يعني اكبر حاجه مثلا لو قولت 500 يبقي يوصل ل اكبر رقم اللي هو ال 500
+min -> ده يعني متصغرش عن الرقم ده مثلا لو 500 انا بقول اصغر رقم ليك 500 بم فوق 
+max -> من الصفر لحد الرقم المحدد
+min -> ده من الرقم المحدد لحد فوق 
+
+@media screen and (max-width:575px){ // من صفر لحد  575 
+	body{
+		width: 100%;
+		background-color:#080;
+	}
+}
+
+@media screen and (min-width:576px) and (max-width:767px){	//من 576 لحد 767
+	body{
+		width: 100%;
+	}
+}
+
+@media screen and (min-width:768px) and (max-width:992px){	// من 768 لحد 992
+	body{
+		width: 50%;
+	}
+}
+
+@media screen and (min-width:993px) and (max-width:1199px){	// من 993 لحد 1199
+	body{
+		width: 33.333%;
+	}
+}
+
+@media screen and (min-width:1200px){	// من 12000  لحد فوق
+	body{
+		width: 25%;
+	}
+}
+
+*/

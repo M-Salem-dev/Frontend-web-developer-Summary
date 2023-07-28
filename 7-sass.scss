@@ -1,0 +1,206 @@
+//sass
+// style.scss
+
+// Live Sass Compiler بتساعد علي الكتابه Visual Studio code ده برامج في ال 
+// style.css اللي من تحت هيعمل ملف Visual Studio code في برنامج Watch Sass بعد كده اضغط ع 
+// <link rel="stylesheet" href="style.css"> عادي كالاتي index.html في صفحه ال cssوارابط ملف ال 
+// Sassو اكتب الاكود ده في ملف ال
+ 
+// =====================================================================================================================================
+//import	// لو عايز اعمل ملف خارجي واربط ب الملف ده بعمل كالاتي
+
+// style.scss
+
+@import '_colors.scss'	//style.scss في ملف colors انا كده رابط الملف الخارجي اللي اسم 
+@import '_colors' // _colors.scssاو ممكن اعمل كده من غير ال 
+//واحد بس style.scss ده عادي وملف _colors.scss يبقي ملف colorsعلامه اندر اسكول ده علشان مش عايز اعمل ملف تاني ل 
+
+.test{
+	color: $danger
+}
+h3{
+	color: $danger;
+}
+
+// ده الملف الخارجي 
+// _colors.scss	
+$danger: tomato;
+$dak: #333;
+
+// =====================================================================================================================================
+// variables
+
+$mainColor: #09c;	//--> variables ده كده 
+$bgColor: #00f;
+$width: 50%;
+$heigh: 400px;
+$mainwidth: 600px;
+$fontsize:20px;
+$fontfamily: 'segoe ui light';
+$margin:20px;
+
+h2{
+	color: $mainColor;
+	background-color: $bgColor;
+	width: $width;
+}
+
+// =====================================================================================================================================
+//	Nesting ده يعني حاجه جوه حاجه ده علشان يمنع التكرار 
+
+//  html
+<section>
+	<div class="parent">
+		<div class="child1">Web-1</div>
+		<div class="child2">Web-2</div>
+		<div class="child3">Web-3</div>
+		<div class="child4">Web-4</div>
+	</div>
+</section>
+
+		
+// .parent :hover // child1 ع ال hoverانا كده بعمل ال 
+.parent 
+{
+	width: $width;
+	
+	.child1
+	{
+		color: $mainColor;
+		
+		// font-size: 20px;
+		// font-family: 'segoe ui light';
+		// font-weight: 900;
+		
+		//ممكن اعمل كده font انا بدل م اقرار كود ال 
+		font:
+		{
+			size: 20px;
+			family: 'segoe ui light';
+			weight: 900;
+		}
+	}
+	.child2
+	{
+		background-color: $bgColor;
+	}
+	&:hover	// parent ع hover انا كده بعمل ال 
+	{
+		color: #f00;
+	}
+}
+
+.parent	:hover	// برضو هنا parent ع hover وممكن اعمل 
+	{
+		color: #f00;
+	}
+
+// =====================================================================================================================================
+//	extend	// ده بيورث 
+.common{
+	text-align: center;
+	box-sizing :border-box;
+	marin: 0;
+	color: #00f
+}
+	
+.shh{
+	background-color: gray;
+	padding :20px 0px;
+	@extend .common;	// common انا كده بورث نفس الكود اللي فوق اللي اسم
+}
+	
+// =====================================================================================================================================
+//loop
+
+.parent		//for loopانا بدل م اعمل كده انا ممكن اعمل 
+{	
+	.child1
+	{
+		
+	}
+	.child2
+	{
+		
+	}
+	.child3
+	{
+		
+	}
+	.child4
+	{
+		
+	}
+}
+
+
+.parent
+{
+	@for $i from 1 to 5{ //بيتعمل 4 مرات parentانا كده اللي هيتعمل جوه ال 
+		.child#{$i}//وهكذه هيبقي كل لون احمر child2 و ال child1 هيعمل style.cssكده هيروح في ملف ال	#{$i}
+		{
+			color: red;
+		}
+	}
+}
+
+.parent
+{
+	@for $i from 1 to 5{ //بيتعمل 4 مرات parentانا كده اللي هيتعمل جوه ال 
+		.child#{$i}//وهكذه هيبقي كل لون احمر child2 و ال child1 هيعمل style.cssكده هيروح في ملف ال	#{$i}
+		{
+			color: rgba(0,150, 230 ,$i /10 ); // بغير فيها الالوان childانا كده بغير في كل ال
+			width: $mainwidth + ($i * 50); // ($i * 50)اللي هي واخده 600 مع ال mainwidthانا كده بجمع ال 
+		}
+	}
+}
+
+//---------------------
+//mixin	// functionده عمل زي ال 
+
+@mixin trans($time){		// prmetl عملت 
+	-webkit-transition: all $time;
+	-ms-transition: all $time;
+	-o-transition: all $time;
+	-moz-transition: all $time;
+	transition: all $time;
+}
+
+h2{
+	@include trans(2s)
+}
+.parent{
+	@include trans(2s)
+}
+
+// mixin مثلا تاني عن 
+@mixin boxShado($x, $y, $z, $c){
+	-webkit-box-shadow: $x $y $z $c
+	-ms-box-shadow: $x $y $z $c;
+	-o-box-shadow: $x $y $z $c;
+	-moz-box-shadow: $x $y $z $c;
+	box-shadow: $x $y $z $c;
+}
+
+div{
+	@include boxShado(20px, 30px, 50px, #00f)
+}
+
+h2{
+	@include boxShado(10px, 8px, 10px, #f00)
+}
+
+//---------------------
+//function
+
+@function converToRem($v)
+{
+	@return ($v / 16);
+}
+
+h2{
+	font-size: converToRem(32rem);	//2rem هو كده هيقسم ال 16/ 32 = 2 هيروح هناك هيبقي 
+}
+.parent{
+	font-size: converToRem(48rem);	//3rem هو كده هيقسم ال 16/ 48 = 3 هيروح هناك هيبقي  
+}

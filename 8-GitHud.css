@@ -1,0 +1,47 @@
+/* front end */
+
+لو عايز انشاء مشروع 
+
+$ git init
+$ git add .
+$ git commit -m "first commit"
+$ git branch -M main
+$ git remote add origin https://github.com/MohamedSalemMf/way14.git
+$ git push -u origin main 
+----------------------------------------------------------
+$ git config --global user.name "M-Salem-dev"
+$ git config --global user.email "mohamed.salem.dev@gmail.com"
+
+----------------------------------------------------------
+/* لو في تعديل في المشروع وعايز ارفع بعمل كالاتي  */
+$ git add .
+$ git commit -m "ay 7aga"	
+$ git push -u origin main 
+
+----------------------------------------------------------
+/* لو عايز اضاف اشخاص معايا  */
+manage access وفي القائمه من الشمال بضغط ع Settings بضغط ع
+Add collaborator واكتب اسم وبعد كده اضغط ع 
+git log /* اللي اتعمل commit ده بيجي اخر */
+
+----------------------------------------------------------
+علشان انزل مشروع عندي ع الجهاز بعمل كالاتي 
+git clone https://git.tasksa.dev/saudi-dates-v2/frontend
+git clone https://github.com/M-Salem-dev/cv.git
+-----------------------------------------------------------
+علشان انزل اخر تحديث من اصحابي بعمل 
+git pull (name branch)	// pull الاساسي علشان اعمل branch لازم اكون ع 
+
+-----------------------------------------------------------
+اللي شغل عليا branch لو عايز اعرف ال 
+git branch
+branch و بيظهر اسم 
+
+جديد branch لو عايز اعمل 
+git checkout -b (Name branch) // اللي انت عملbranchاسم ال
+git add .
+git commit -m "first commit"
+git push (Name branch)	// اللي انت عملbranchاسم ال
+
+dev
+git merge origin/(Name branch)  // بتاعي branchب ال merge الاساسي واعمل  branchالاساسي بس لازم اكون ع ال branchبتاعي ع ال branchانا كده بعمل دمج م بين ال

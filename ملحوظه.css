@@ -1,0 +1,80 @@
+// ملحوظه 
+// google speed test في موقع بيقاس سرعه الموقع اسم
+
+SEO 
+واحده بس ويكون مش اكتر من ثلاث كلمات h1 في كل صفحه في الموقع <h1><h1> لازم يكون في 
+<img alt="">اسم يدل ع الموقع altلازم اكتب في ال 
+<meta> metaلازم اعمل حاجات في ال 
+domain	searsh بختار يكون سهل في ال domainتاني عنصر مثلا اسم ال 
+
+
+ده علشان الوقت والتاريخ js في ال date bekar في حاجه اسمها 
+ده علشان الالون js في ال color bekar في حاجه اسمها 
+او للعرض input دول ممكن استخدمهم في ال 
+
+inline-block علشان هو height مش بيخد span ال
+
+afاقل من ال z-index بيبقي واخد before
+
+
+
+// ajax 	//json مع ال refresh ده بيحب داتا من غير ajax
+
+/*
+prefixer
+ده علشان يدعم جميع المتصفحات prefixerاعمل الcssلازم بعد م اخلاص صفحه ال
+https://autoprefixer.github.io/  اسم prefixer اسم الموقع اللي بيعمل ال
+autoprefixer css onlino وبعد كده اضغط علي 
+cssواحط في الcopy اخد اللي اتعمل prefixerواحطها في الموقع وهو هيحولها ل cut اخدهcssاخد الخصائص اللي جوه ال
+*/
+
+
+/*
+// وارفع الموقع السيرفر jsو ال css اعمل نسخه اعمل مضغط من ال jsوال css لازم بعد م اخلاص صفحه 
+// js.min.js و css.min.css المضغط واسمها js و css folder واخد واحط الملفات ده في كل https://www.toptal.com/developers/cssminifier/  موقع 
+*/
+
+/*
+jsضغط ملف ال 
+https://www.toptal.com/developers/javascript-minifier/
+*/
+
+Validation لم اشتغل موقع عادي بستخدم ال 
+
+cssواخد الخط احط في ال htmlبيجيب اللينك واربط في ال googel fonts لم استخدم خط من 
+
+reactفي ال 
+cssواخد الخط احط في ال index.css في ملف import بيجيب googel fonts لم استخدم خط من 
+
+position مش بيشتغل مع ال margin-auto ال 
+
+overflow:auto; ل الابن و الاب يتحرك معاه يبقي احل المشكله ب margin لم اعمل 
+
+/*----------------------------------------------------*/
+bootstrapمثلا ل Download لو هستخدم موقع مهم غي بيانات مهمه سكيرور عاليه مثلا زي تسجيل الدخل وكده بستهخدم اي حاجه 
+bootstrapلو مش موقع مهم مثلا عياده محامي اي كان يبقي استخدم اللينك عادي بتاع ال 
+
+
+بعد م اخلص الفرنت 
+web spp , mobile app , desktop app
+web back
+bibel
+disin batrn
+unit testing
+pwa
+rxjs reactive rxis
+
+https://www.edraak.org/explore/
+
+react interceptor axios
+// ابقي ابص عليها 
+//في حاجه واحد  او الم اي حاجه Api  ده علشان مثلا الم 
+
+web back
+css ده بيحل لينكات ال 
+js ده بيحل لينكات ال 
+http بيلم اللينكات كلها بيخلي لينك واحد علشان ال 
+و علشان يسرع الموقع
+
+webpack
+babel
